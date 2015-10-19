@@ -1,9 +1,18 @@
 var mainApp = angular.module('mainApp', ['ui.router', 'ngMaterial']);
 
-mainApp.controller('mainCtrl', ['$scope', function ($scope) {
+mainApp.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+		.primaryPalette('deep-purple');
+		//.dark();
+});
 
-  $scope.items = [];
-	for (i = 1; i <= 30;i++) $scope.items.push("Zeile"+i);
+mainApp.controller('mainCtrl', ['$scope', '$mdSidenav', '$mdMedia', function ($scope, $mdSidenav, $mdMedia) {
+	$scope.toggleSidenav = function (menuId) {
+		$mdSidenav(menuId).toggle();
+	}
+
+	$scope.items = [];
+	for (i = 1; i <= 30; i++) $scope.items.push("Zeile" + i);
 
 } ]);
 

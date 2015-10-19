@@ -20,13 +20,13 @@
 		<md-toolbar layout="row">
 			<div class="md-toolbar-tools">
 				<span>
-					<md-button xng-click="toggleSidenav('left')" hide-gt-lg class="md-icon-button">
+					<md-button ng-click="toggleSidenav('left')" hide-gt-lg class="md-icon-button">
 						<md-icon aria-label="Menu" md-svg-icon="/vendor/material-design-icons/navigation/svg/design/ic_menu_24px.svg"></md-icon>
 					</md-button>
 				</span>
 
-				<span flex="15" layout xlayout-align="center center" >
-					<span>Logo</span>
+				<span flex="20" hide show-gt-md>
+					<span>Material Design</span>
 				</span>
 				<span flex layout layout-align="center center" >
 					<span>Toolbar</span>
@@ -42,7 +42,18 @@
 
 		<div flex layout="row">
 
+			<!--   Menu (sidenav-links) -->
 			<md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')" ng-cloak>
+				<md-toolbar layout="row"  hide-gt-lg >
+					<div class="md-toolbar-tools">
+					<md-button ng-click="toggleSidenav('left')" class="md-icon-button">
+						<md-icon aria-label="Menu" md-svg-icon="/vendor/material-design-icons/navigation/svg/design/ic_chevron_left_24px.svg"></md-icon>
+					</md-button>
+						<h3>Material Design</h3>
+					</div>
+				</md-toolbar>
+
+
 				<a ui-sref="page1">Page 1</a>
 				<a ui-sref="page2">Page 2</a>
 				<a ui-sref="page3">Page 3</a>
