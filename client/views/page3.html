@@ -1,0 +1,25 @@
+<div flex>
+	<h1>Page3 oben</h1>
+</div>
+	
+<div flex layout="row" layout-fill>
+	<div flex layout-margin class="md-whiteframe-2dp">
+		<h1>Page3 mitte links</h1>
+	</div>
+	<div flex layout="column" layout-margin class="md-whiteframe-2dp">
+		<div flex>
+			<h1>Page3 mitte rechts</h1>
+		</div>
+		<md-content flex class="md-whiteframe-2dp">
+			<ul>
+				<li ng-repeat="item in items">{{item}}</li>
+			</ul>
+		</md-content>
+	</div>
+
+</div>
+
+<div flex>
+	<h1>Page3 unten</h1>
+</div>
+
