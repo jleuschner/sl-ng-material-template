@@ -1,0 +1,22 @@
+{
+  "name": "sl-ng-material-template",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jleuschner/sl-ng-material-template",
+  "authors": [
+    "jleuschner <jens@marieswelt.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-material": "~0.11.4",
+    "robotodraft": "~1.1.0"
+  }
+}
