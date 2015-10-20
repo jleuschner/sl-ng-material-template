@@ -2,7 +2,7 @@ var mainApp = angular.module('mainApp', ['ui.router', 'ngMaterial']);
 
 mainApp.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-		.primaryPalette('deep-purple');
+		.primaryPalette('teal');
 		//.dark();
 });
 

@@ -53,6 +53,16 @@
 					</div>
 				</md-toolbar>
 
+				<md-list>
+					<md-list-item ng-click="toggleSidenav('left')">
+						<span ui-sref="page1" layout-fill md-ink-ripple class="md-clickable">Page 1</span>
+					</md-list-item>
+					<md-list-item ng-click="toggleSidenav('left')">
+						<span ui-sref="page3" layout-fill md-ink-ripple class="md-clickable">Page 3</span>
+					</md-list-item>
+
+				</md-list>
+
 
 				<a ui-sref="page1">Page 1</a>
 				<a ui-sref="page2">Page 2</a>
